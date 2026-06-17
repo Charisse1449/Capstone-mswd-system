@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>MSWD Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="app-body">
+
+  <div class="sidebar">
+    <img src="../assets/logo.png" class="side-logo">
+    <h1>MSWD</h1>
+    <p>Municipal Social Welfare<br>and Development</p>
+
+    <button class="nav active" onclick="goToDashboard()">🏠 DASHBOARD</button>
+    <button class="nav" onclick="goToResidents()">👥 RESIDENTS</button>
+    <button class="nav">🧑‍🤝‍🧑 BENEFICIARIES</button>
+    <button class="nav">🤲 CLAIMS</button>
+    <button class="nav">📊 REPORTS</button>
+    <button class="nav">⚙ SETTINGS</button>
+  </div>
+
+  <div class="main-content">
+    <div class="topbar">
+      <button>‹ MENU</button>
+      <p>Welcome back, Super Admin</p>
+    </div>
+
+    <h1 class="page-title">Dashboard</h1>
+
+    <div class="cards">
+      <div class="card">
+        <p>TOTAL RESIDENTS</p>
+        <h2>1,245</h2>
+      </div>
+
+      <div class="card green">
+        <p>ACTIVE BENEFICIARIES</p>
+        <h2>980</h2>
+      </div>
+
+      <div class="card yellow">
+        <p>FUNDS DISTRIBUTED</p>
+        <h2>₱350,000.00</h2>
+      </div>
+    </div>
+
+    <div class="chart-box">
+      <h2>PROGRAM DISTRIBUTION</h2>
+      <p>Indigent | Solo Parent | Senior Citizen | Person with Disability</p>
+      <h1>980 Total</h1>
+    </div>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
