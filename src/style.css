@@ -1,0 +1,238 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.welcome-body,
+.login-body {
+  background-image: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)), url('../assets/background.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.welcome-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  height: 100vh;
+}
+
+.welcome-logo {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+}
+
+.welcome-text {
+  text-align: center;
+  color: white;
+}
+
+.welcome-text h1 {
+  font-size: 140px;
+  margin: 0;
+  color: #ffc04d;
+}
+
+.welcome-text p {
+  letter-spacing: 6px;
+  font-size: 22px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  padding: 16px 35px;
+  font-weight: bold;
+  font-size: 18px;
+  background: #6ec1f6;
+}
+
+.login-left {
+  position: absolute;
+  left: 180px;
+  top: 130px;
+  color: #ffc04d;
+  text-align: center;
+}
+
+.login-logo {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+}
+
+.login-left h1 {
+  font-size: 110px;
+  margin: 0;
+}
+
+.login-card {
+  position: absolute;
+  right: 100px;
+  top: 70px;
+  width: 520px;
+  height: 620px;
+  padding: 90px 55px;
+  background: linear-gradient(to right, #111, #666);
+  border-radius: 25px;
+  text-align: center;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 25px;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.link {
+  color: #34b8ff;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+.app-body {
+  display: flex;
+  background: #000;
+  height: 100vh;
+  color: white;
+}
+
+.sidebar {
+  width: 310px;
+  background: #cfc5ba;
+  color: black;
+  padding: 25px;
+  text-align: center;
+}
+
+.side-logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.sidebar h1 {
+  font-size: 45px;
+  margin: 5px 0;
+}
+
+.nav {
+  display: block;
+  width: 100%;
+  margin: 25px 0;
+  background: transparent;
+  color: black;
+  text-align: left;
+  border-radius: 8px;
+}
+
+.nav.active {
+  border: 3px solid black;
+  background: #e8e8e8;
+}
+
+.main-content {
+  flex: 1;
+  padding: 25px 35px;
+  overflow-y: auto;
+}
+
+.topbar {
+  background: #e9e9e9;
+  color: black;
+  padding: 15px 25px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.page-title {
+  font-size: 50px;
+  margin: 25px 0 10px;
+}
+
+.cards {
+  display: flex;
+  gap: 40px;
+  margin: 30px 0;
+}
+
+.card {
+  width: 280px;
+  padding: 25px;
+  background: #bfe9ff;
+  color: black;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.card.green {
+  background: #bfffd8;
+}
+
+.card.yellow {
+  background: #fff4d8;
+}
+
+.chart-box {
+  background: white;
+  color: black;
+  border-radius: 25px;
+  padding: 35px;
+  text-align: center;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-btn {
+  background: #09a9ff;
+}
+
+.filters {
+  display: flex;
+  gap: 15px;
+  margin: 25px 0;
+}
+
+.filters input,
+.filters select {
+  padding: 18px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+}
+
+table {
+  width: 100%;
+  background: #ddd;
+  color: black;
+  border-collapse: collapse;
+}
+
+th {
+  background: #32aeea;
+  padding: 20px;
+}
+
+td {
+  padding: 20px;
+  text-align: center;
+  border: 2px solid gray;
+}
