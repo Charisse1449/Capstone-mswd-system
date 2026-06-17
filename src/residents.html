@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>MSWD Residents</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="app-body">
+
+  <div class="sidebar">
+    <img src="../assets/logo.png" class="side-logo">
+    <h1>MSWD</h1>
+    <p>Municipal Social Welfare<br>and Development</p>
+
+    <button class="nav" onclick="goToDashboard()">🏠 DASHBOARD</button>
+    <button class="nav active" onclick="goToResidents()">👥 RESIDENTS</button>
+    <button class="nav">🧑‍🤝‍🧑 BENEFICIARIES</button>
+    <button class="nav">🤲 CLAIMS</button>
+    <button class="nav">📊 REPORTS</button>
+    <button class="nav">⚙ SETTINGS</button>
+  </div>
+
+  <div class="main-content">
+    <div class="topbar">
+      <button>‹ MENU</button>
+      <p>Welcome back, Super Admin</p>
+    </div>
+
+    <div class="page-header">
+      <div>
+        <h1 class="page-title">Residents</h1>
+        <p>Manage and view all registered residents.</p>
+      </div>
+
+      <button class="add-btn" onclick="openAddResident()">+ Add Resident</button>
+    </div>
+
+    <div class="filters">
+      <input type="text" placeholder="Search by name or barangay">
+      <select>
+        <option>All Categories</option>
+        <option>Indigent</option>
+        <option>Senior Citizen</option>
+        <option>PWD</option>
+        <option>Solo Parent</option>
+      </select>
+      <select>
+        <option>All Barangays</option>
+        <option>Agay-ay</option>
+        <option>Samoje</option>
+        <option>Pong-oy</option>
+      </select>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Biometric ID</th>
+          <th>Photo</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Category</th>
+          <th>Barangay</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>BID-202601</td>
+          <td>👤</td>
+          <td>Irene Charisse Divinagracia Tolibas</td>
+          <td>35</td>
+          <td>Indigent</td>
+          <td>Agay-ay</td>
+          <td>
+            <button>View</button>
+            <button>Edit</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
