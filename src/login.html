@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>MSWD Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-body">
+
+  <div class="login-left">
+    <img src="../assets/logo.png" class="login-logo">
+    <h1>MSWD</h1>
+  </div>
+
+  <div class="login-card">
+    <input type="text" id="username" placeholder="USERNAME">
+    <input type="password" id="password" placeholder="PASSWORD">
+
+    <p class="link" onclick="showMessage('Forgot Password?', 'Please contact the System Administrator.')">
+      FORGOT PASSWORD?
+    </p>
+
+    <button onclick="login()">Sign In</button>
+
+    <p class="link" onclick="showMessage('No Account?', 'Please contact the System Administrator.')">
+      No Account?
+    </p>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

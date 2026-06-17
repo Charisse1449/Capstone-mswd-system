@@ -1,0 +1,12 @@
+{
+  "name": "mswd-capstone-system",
+  "version": "1.0.0",
+  "description": "MSWD Socio-Demographic Information System",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^latest"
+  }
+}
